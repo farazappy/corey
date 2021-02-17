@@ -148,15 +148,27 @@ a {
 .hero-content {
   color: white;
   text-align: center;
-  padding: 350px 195px;
+  padding: 20% 195px;
   position: relative;
+  height: 100vh;
 }
 
 .hero-content .scroll-arrow {
   width: 30px;
   position: absolute;
   left: 50%;
-  bottom: 50px;
+  bottom: 100px;
+  animation: animatearrow 1s alternate infinite;
+}
+
+@keyframes animatearrow {
+  0% {
+    bottom: 200px;
+  }
+
+  100% {
+    bottom: 100px;
+  }
 }
 
 .hero-content .title {
